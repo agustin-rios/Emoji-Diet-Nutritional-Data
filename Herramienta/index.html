@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Equilibio Comida </title>
+    <meta charset=" UTF-8 ">
+    <link rel="stylesheet" href="src\styles\index.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left-column">
+            <p id="title" class="title">Calculadora de Consumibles</p>
+            <div class="canasta-selector">
+                <div class="selector-card" id="first-task">
+                    <span role="img" id="food-emoji" emoji>&#128523;</span>
+                    <select name="food" id="food" class="food-select"></select>
+                    <div id="food-form">
+                        <p id="amount-leyend">Cantidad (g):</p>
+                        <input type="number" name="amount" id="amount" autocomplete="off">
+                        <div class="food-form-buttons">
+                            <button id="add-food" class="blue"></button>
+                            <button id="remove-food" class="alert"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="selector-card" id="second-task">
+                    <p>Atributo de Consumibles:</p>
+                    <select name="food-char" id="food-char" class="food-select"></select>
+                    <br>
+                    <hr>
+                    <p>Total de atributo a consumir de Canasta:</p>
+                    <p id="selected-char-info">0</p>
+                </div>
+            </div>
+            <div class="layer-card" id="layer-card">
+                <p>Canasta Consumibles</p>
+                <hr>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="resume"></div>
+            <div class="graph" id="third-task"></div>
+        </div>
+    </div>
+
+    <script src='.\src\js\index.js' charset='utf-8'></script>
+
+</body>
+
+</html>
